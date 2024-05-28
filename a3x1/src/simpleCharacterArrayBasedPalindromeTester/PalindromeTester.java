@@ -9,7 +9,7 @@ package simpleCharacterArrayBasedPalindromeTester;
  *
  */
 public class PalindromeTester {
-    
+
     /**
      * Die Methode isPalindrome prüft ob ein Palindrom vorliegt.
      * 
@@ -33,15 +33,32 @@ public class PalindromeTester {
     //###               VVVVVVVVVVVVVV
     //###                  VVVVVVVV
     //###                     VV
-    
+
     // Schreiben Sie eine Methode, die
     // o) ein Ergebnis vom Typ boolean abliefert
     // o) isPalindrome heißt
     // o) ein char[] als Parameter entgegen nimmt
     //    Der Parameter soll word heißen
-    
+
     //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     // Führen Sie Änderungen oberhalb dieser Zeilen durch.
     //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    
+
+    public boolean isPalindrome(char[] word) {
+
+        
+        //String wordString = new String(word);
+        //Character.toLowerCase
+        //char[] text_v1 = theText_v1.toLowerCase().toCharArray();    // String (geeignet) in char[] wandeln
+        
+        for (int i=0; i<word.length; i++)
+        {
+            word[i] = Character.toLowerCase(word[i]);
+            if (word[i] != word[word.length-1-i])
+            {
+                return false;
+            } // if
+        } // for
+        return true;
+    } // method
 }//class

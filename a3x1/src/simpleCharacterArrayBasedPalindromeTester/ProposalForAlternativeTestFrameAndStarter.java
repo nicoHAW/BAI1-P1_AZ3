@@ -62,9 +62,9 @@ public class ProposalForAlternativeTestFrameAndStarter {
         // =================================
         
         // Version 1
-        String theText_v1 = "blabla";                               // <<-- Der TestCase - zunächst als String
+        String theText_v1 = "otto";                               // <<-- Der TestCase - zunächst als String
         char[] text_v1 = theText_v1.toLowerCase().toCharArray();    // String (geeignet) in char[] wandeln
-      //result = palindromeTester.isPalindrome( text_v1 );
+        result = palindromeTester.isPalindrome( text_v1 );
         //
         System.out.printf(
             "Der Text: \"%s\" ist %s Palindrom\n",
@@ -76,7 +76,7 @@ public class ProposalForAlternativeTestFrameAndStarter {
         
         // Version 2
         char[] text_v2 = { 'l', 'a', 'l', 'i', 'l', 'u' };          // <<-- Der TestCase - direkt als char[]
-      //result = palindromeTester.isPalindrome( text_v2 );
+      result = palindromeTester.isPalindrome( text_v2 );
         //
         System.out.printf(
             "Der Text: \"%s\" ist %s Palindrom\n",
@@ -86,10 +86,11 @@ public class ProposalForAlternativeTestFrameAndStarter {
         System.out.printf( "\n\n" );
         
         
-        System.out.printf( "THIS IS THE END" );
+        System.out.printf( "THIS IS THE END\n\n" );
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         // Führen Sie KEINE Änderungen unterhalb dieser Zeilen durch.
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    }//method()
     
+    }//method()
+         
 }//class
