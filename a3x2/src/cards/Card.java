@@ -661,5 +661,12 @@ public class Card implements Comparable<Card> {
     public String toString(){
         return " [" + suit + rank + "] ";
     }//method()
+
+
+
+    public static Card deal() {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
 }//class
