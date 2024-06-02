@@ -132,3 +132,6 @@ synchronizeWithOriginMasterBranch.bash
 #
 # ...
 #
+/cardProcessor/
+/cards/
+/stuffBeginnersDontHaveToUnderstand/
