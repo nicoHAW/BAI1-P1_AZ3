@@ -45,20 +45,17 @@ public class PalindromeTester {
     //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     public boolean isPalindrome(char[] word) {
-
-        
         //String wordString = new String(word);
         //Character.toLowerCase
         //char[] text_v1 = theText_v1.toLowerCase().toCharArray();    // String (geeignet) in char[] wandeln
-        
-        for (int i=0; i<word.length; i++)
-        {
-            word[i] = Character.toLowerCase(word[i]);
-            if (word[i] != word[word.length-1-i])
-            {
-                return false;
-            } // if
-        } // for
-        return true;
-    } // method
+
+
+        int left = 0;
+        int right = word.length-1;
+        while (Character.toLowerCase(word[left]) == Character.toLowerCase(word[right]) && left <= right) {            
+            left++;
+            right--;
+        } // while
+        return left > right;
+    } // method isPalindrome
 }//class
