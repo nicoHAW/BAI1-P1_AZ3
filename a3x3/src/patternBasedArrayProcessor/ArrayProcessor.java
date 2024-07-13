@@ -10,7 +10,7 @@ package patternBasedArrayProcessor;
  *
  */
 public class ArrayProcessor {
-    
+
     //###
     //###
     //###
@@ -27,11 +27,47 @@ public class ArrayProcessor {
     //###                  VVVVVVVV
     //###                     VV
     public long process( long[][] theArray ){
-        
+
+        int xLength = theArray.length;
+        int yLength= theArray[0].length;
+
+        for (int yAchse = 0; yAchse < theArray.length; yAchse++) {
+            for (int xAchse = 0; xAchse < theArray[yAchse].length; yAchse++) {
+
+                boolean ArrayFits = testFitting(yAchse, xAchse, theArray);
+
+                if(ArrayFits) {
+                    long sum = addArray(yAchse, xAchse, theArray);
+                }
+
+            }//forXAchse
+        }//forYAchse
+
         return 0;   // <<<=== Diese Zeile ist falsch!   bzw. nur ein Platzhalter um den Compiler gluecklich zu machen. Die Zeile muss sinnvoll ersetzt werden.
     }//method()
-    //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    // Führen Sie Änderungen oberhalb dieser Zeilen durch.
-    //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    
-}//class
+
+
+    private boolean testFitting(int xPosition, int yPosition, long[][] theArray) {
+
+        for (int yAchse = 0; yAchse < theArray.length; yAchse++) {
+            
+        }
+            for (int xAchse = 0; xAchse < theArray[yAchse].length; yAchse++) {
+
+
+                return false;
+            }//testFitting
+
+
+
+            private long addArray(int xPosition, int yPosition) {
+                return 0;
+            }//addArray
+
+
+
+            //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            // Führen Sie Änderungen oberhalb dieser Zeilen durch.
+            //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        }//class
